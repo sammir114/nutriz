@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #FDFAF8;
+}
+
+#wrap_wrap {
+  min-width: 1400px;
+  overflow: hidden;
+}
+
+/* 원하는 높이로 스크롤시 아이콘나타나기 */
+.top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  z-index: 99;
+
+}
+
+/* header 꾸미기 */
+.header {
+  width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  padding: 25px;
+}
+
+
+/* 상세페이지 */
+
+.container_wrap {}
+
+.container {}
+
+.tab-content {
+  margin: 0 auto;
+  width: 1320px;
+ 
+}
+
+.tab-content img {
+  padding: 50px 0 50PX 120PX;
+text-align: center;
+}
+
+
+
+
+
+/* footer 꾸미기 */
+#footer {
+  background-color: #076633;
+  height: 188px;
+  color: white;
+
+}
+
+.footer_wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.text1 {
+  display: flex;
+  padding: 20px 0;
+}
+
+.text1 li a {
+  padding-right: 20px;
+}
+
+.footer_logo {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.sns_img {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+}
+
+.sns_img img {
+  padding-left: 9px;
+}
+
+.text1 :hover {
+  color: orange;
+}
+
+.sns_img {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+
+}
+
+.sns_img div {
+  cursor: pointer;
+}
+
+.sns_img1 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_facebook.png) no-repeat center;
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img1:hover {
+  background: url(../images/icon_facebook_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
+
+.sns_img2 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_instar.png);
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img2:hover {
+  background: url(../images/icon_instar_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
+
+.sns_img3 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_twitter.png)no-repeat center;
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img3:hover {
+  background: url(../images/icon_twitter_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
+
+.sns_img4 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_youtube.png) no-repeat center;
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img4:hover {
+  background: url(../images/icon_youtube_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}

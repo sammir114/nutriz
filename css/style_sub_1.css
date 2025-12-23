@@ -1,0 +1,432 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #FDFAF8;
+}
+
+#wrap_wrap {
+  min-width: 1400px;
+  overflow: hidden;
+}
+
+/* 원하는 높이로 스크롤시 아이콘나타나기 */
+.top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  z-index: 99;
+}
+
+/* header 꾸미기 */
+.header {
+  width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  padding: 25px;
+}
+
+/* 메인배너 / Swiper 꾸미기  */
+#main_banner {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+#main_banner .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#main_banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* <!-- 상세페이지 --> */
+
+/* 1. 기본 스타일 초기화 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 2. 레이아웃 (컨테이너) */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 3. 상단 제품 섹션 (PC: Flexbox 사용) */
+.product-section {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* 왼쪽: 제품 이미지 */
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 오른쪽: 제품 정보 */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.rating {
+  color: #f39c12;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #d32f2f;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+/* 옵션 및 수량 선택 */
+.option-group {
+  margin-bottom: 20px;
+}
+
+.option-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.option-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.quantity-control button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+}
+
+/* 총 가격 */
+.total-price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 구매 버튼 그룹 */
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-cart {
+  background: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.btn-buy {
+  background: #333;
+  color: #fff;
+}
+
+.btn-cart:hover {
+  background: #f9f9f9;
+}
+
+.btn-buy:hover {
+  background: #555;
+}
+
+/* 4. 하단 상세정보 탭 */
+.detail-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tab-buttons {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.tab-btn.active {
+  background: #fff;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.tab-content {
+  padding: 40px 0 0;
+  text-align: center;
+  color: #777;
+  min-height: 300px;
+}
+
+.tab-content img {
+  display: block;
+  text-align: center;
+  padding-left: 150PX;
+  
+}
+
+
+/* 5. 모바일 반응형 처리 */
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
+
+  .btn-group {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .container {
+    padding-bottom: 80px;
+    /* 버튼 공간 확보 */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* footer 꾸미기 */
+#footer {
+  background-color: #076633;
+  height: 188px;
+  color: white;
+
+}
+
+.footer_wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.text1 {
+  display: flex;
+  padding: 20px 0;
+}
+
+.text1 li a {
+  padding-right: 20px;
+}
+
+.footer_logo {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.sns_img {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+}
+
+.sns_img img {
+  padding-left: 9px;
+}
+
+.text1 :hover {
+  color: orange;
+}
+
+.sns_img {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+
+}
+
+.sns_img div {
+  cursor: pointer;
+}
+
+.sns_img1 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_facebook.png) no-repeat center;
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img1:hover {
+  background: url(../images/icon_facebook_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
+
+.sns_img2 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_instar.png);
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img2:hover {
+  background: url(../images/icon_instar_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
+
+.sns_img3 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_twitter.png)no-repeat center;
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img3:hover {
+  background: url(../images/icon_twitter_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
+
+.sns_img4 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon_youtube.png) no-repeat center;
+  /* 원래 이미지 */
+  transition: 0.3s;
+}
+
+.sns_img4:hover {
+  background: url(../images/icon_youtube_1.png) no-repeat center;
+  /* 바뀔 이미지 */
+}
